@@ -116,6 +116,23 @@ body {
     text-align: center;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;   
 }
+
+.heading {
+	display: flex;
+}
+
+.heading h1 {
+	flex: 100%;
+}
+
+.heading img {
+	display: inline-block;
+	aspect-ratio: 1/1;
+	width: 80px;
+	flex: auto;
+	height: 100%;
+	border-radius: 100%;
+}
   
 .primary {
     color: #eee;
