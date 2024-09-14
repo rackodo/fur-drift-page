@@ -18,21 +18,21 @@ body {
 	animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
 }
 
-.wavy > use:nth-child(1) {
-	animation-delay: -2s;
-	animation-duration: 7s;
+.wavy > use:nth-child(1) { /*Slowed down the wave speed (Doff)*/
+	animation-delay: -s;
+	animation-duration: 40s;
 	color: #FD32E0;
 }
 
 .wavy > use:nth-child(2) {
-	animation-delay: -7s;
-	animation-duration: 10s;
+	animation-delay: -20s;
+	animation-duration: 60s;
 	color: #E689FE;
 }
 
 .wavy > use:nth-child(3) {
-	animation-delay: -12s;
-	animation-duration: 13s;
+	animation-delay: -40s;
+	animation-duration: 80s;
 	color: #C80DFF;
 }
 
@@ -95,28 +95,43 @@ body {
 }
 
 .buttons {
-	display: flex;
-	gap: 10px;
-}
-
-.buttons a {
-	text-decoration: none;
-	border-radius: 10px;
-	padding: 10px 20px;
-	text-align: center;
-}
-
-.primary {
-	color: #eee;
-	background: #333;
-	font-weight: bold;
-	flex: auto;
-	border: 2px solid transparent;
-}
-
-.secondary {
-	border: 2px solid #333;
-}
+    display: flex;
+    gap: 10px;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;  
+  
+  }
+  
+  .primary {
+    color: #eee;
+    background: #333;
+    font-weight: bold;
+    flex: auto;
+    border: 2px solid transparent;
+  }
+  
+  .secondary {
+    border: 2px solid #333;
+    color: #333;
+  }
+  
+  /*Added Hover effect (Doff)*/
+  .primary:hover {
+    background-color: #2196f3;
+    box-shadow: 0 0 10px 5px #fd32df44;
+  }
+  
+  .secondary:hover {
+    border: 2px solid #2196f3;
+    color: #2196f3;
+    box-shadow: 0 0 10px 5px #fd32df44;
+  }
 
 @media screen and (max-width: 800px) {
 	.card {
@@ -145,5 +160,6 @@ body {
 
 	.secondary {
 		border-color: #eee;
+        color: #eee
 	}
 }
