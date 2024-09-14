@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furries Adrift</title>
     <link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/fa407f85ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="waves-wrapper">
@@ -12,57 +13,30 @@
 		viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 			<style>
 				#wave1 {
-					fill: url(#gradientL1)
+					fill: url(#gradient1)
 				}
 
 				#wave2 {
-					fill: url(#gradientL2)
+					fill: url(#gradient2)
 				}
 
 				#wave3 {
-					fill: url(#gradientL3)
-				}
-
-				@media (prefers-color-scheme: dark) {
-					#wave1 {
-						fill: url(#gradientD1)
-					}
-	
-					#wave2 {
-						fill: url(#gradientD2)
-					}
-	
-					#wave3 {
-						fill: url(#gradientD3)
-					}
+					fill: url(#gradient3)
 				}
 			</style>
 			<defs>
 				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-				<linearGradient id="gradientL1" gradientTransform="rotate(90)">
+				<linearGradient id="gradient1" gradientTransform="rotate(90)">
 					<stop offset="5%" stop-color="#fcb1f1" />
 					<stop offset="25%" stop-color="#FD32E0" />
 				</linearGradient>
-				<linearGradient id="gradientL2" gradientTransform="rotate(90)">
+				<linearGradient id="gradient2" gradientTransform="rotate(90)">
 					<stop offset="5%" stop-color="#f7d6ff" />
 					<stop offset="25%" stop-color="#E689FE" />
 				</linearGradient>
-				<linearGradient id="gradientL3" gradientTransform="rotate(90)">
+				<linearGradient id="gradient3" gradientTransform="rotate(90)">
 					<stop offset="5%" stop-color="#e48cff" />
 					<stop offset="25%" stop-color="#C80DFF" />
-				</linearGradient>
-				<linearGradient id="gradientD1" gradientTransform="rotate(90)">
-					<stop offset="5%" stop-color="#fcb1f1" />
-					<stop offset="25%" stop-color="#FD32E0" />
-				</linearGradient>
-				<linearGradient id="gradientD2" gradientTransform="rotate(90)">
-					<stop offset="5%" stop-color="#f7d6ff" />
-					<stop offset="25%" stop-color="#E689FE" />
-				</linearGradient>
-				<linearGradient id="gradientD3" gradientTransform="rotate(90)">
-					<stop offset="5%" stop-color="#e48cff" />
-					<stop offset="25%" stop-color="#C80DFF" />
-				</linearGradient>
 			</defs>
 			<g class="wavy">
 				<use xlink:href="#gentle-wave" x="48" y="0" id="wave1"/>
@@ -86,7 +60,7 @@
 			  </div>
 			<hr>
 			<div class="footer">
-				Website designed by rackodo & dingledangledoff.
+				Website designed by <a href="https://github.com/rackodo" class="extLink" target="_blank">rackodo</a> & <a href="https://github.com/dingledangledoff" class="extLink" target="_blank">dingledangledoff</a>.
 			</div>
 		</div>
 	</div>

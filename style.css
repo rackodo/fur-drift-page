@@ -97,41 +97,53 @@ body {
 .buttons {
     display: flex;
     gap: 10px;
-  }
+}
   
-  .buttons a {
+.buttons a {
     text-decoration: none;
     border-radius: 10px;
     padding: 10px 20px;
     text-align: center;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;  
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;   
+}
   
-  }
-  
-  .primary {
+.primary {
     color: #eee;
     background: #333;
     font-weight: bold;
     flex: auto;
     border: 2px solid transparent;
-  }
+}
   
-  .secondary {
+.secondary {
     border: 2px solid #333;
     color: #333;
-  }
+}
   
-  /*Added Hover effect (Doff)*/
-  .primary:hover {
+/*Added Hover effect (Doff)*/
+.primary:hover {
     background-color: #2196f3;
     box-shadow: 0 0 10px 5px #fd32df44;
-  }
+}
   
-  .secondary:hover {
+.secondary:hover {
     border: 2px solid #2196f3;
     color: #2196f3;
     box-shadow: 0 0 10px 5px #fd32df44;
-  }
+}
+
+.extLink {
+	color: #2196f3;
+}
+
+.extLink::before {
+	display: inline-block;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font: var(--fa-font-solid);
+	content:'\f08e';
+	padding-right: 3px;
+}
 
 @media screen and (max-width: 800px) {
 	.card {
