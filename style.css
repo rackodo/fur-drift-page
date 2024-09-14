@@ -12,6 +12,16 @@ body {
 	height: 50dvh;
 }
 
+/*Wave Gradients*/
+:root {
+	--gradient1-start: #fcb1f1;
+	--gradient1-end: #FD32E0;
+	--gradient2-start: #f7d6ff;
+	--gradient2-end: #E689FE;
+	--gradient3-start: #e48cff;
+	--gradient3-end: #C80DFF;
+  }
+
 /* CSS Animation */
 
 .wavy > use {
@@ -174,4 +184,14 @@ body {
 		border-color: #eee;
         color: #eee
 	}
+
+	/*Wave gradients dark theme*/
+	:root {
+		--gradient1-start: #7F1971;
+		--gradient1-end: #FD32E0;
+		--gradient2-start: #9D5FAF;
+		--gradient2-end: #E689FE;
+		--gradient3-start: #63077F;
+		--gradient3-end: #C80DFF;
+	  }
 }
