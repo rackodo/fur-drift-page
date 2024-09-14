@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+	background-color: #2196f3;
+    margin:0;
+	padding:0;
+	height: 100dvh;
+}
+
+.waves {
+	width: 100%;
+	height: 50dvh;
+}
+
+/* CSS Animation */
+
+.wavy > use {
+	animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+
+.wavy > use:nth-child(1) {
+	animation-delay: -2s;
+	animation-duration: 7s;
+	color: #FD32E0;
+}
+
+.wavy > use:nth-child(2) {
+	animation-delay: -7s;
+	animation-duration: 10s;
+	color: #E689FE;
+}
+
+.wavy > use:nth-child(3) {
+	animation-delay: -12s;
+	animation-duration: 13s;
+	color: #C80DFF;
+}
+
+@keyframes move-forever {
+	0% {
+		transform: translate3d(-90px,0,0);
+	}
+	100% { 
+		transform: translate3d(86px,0,0);
+	}
+}
+
+@keyframes float-in {
+	0% {bottom: -50vh}
+	100% {bottom: 0px}
+}
+
+/* Bash's Code */
+.waves-wrapper {
+	background: linear-gradient(180deg, #2196f3 0%, #00bcd4 100%);
+	overflow: hidden;
+	position: fixed;
+	display: flex;
+	align-items: end;
+	margin: 0px;
+	padding: 0;
+	bottom: 0px;
+	height: 100dvh;
+	width: 100vw;
+	z-index: -10;
+}
+
+.waves {
+	position: relative;
+	animation-name: float-in;
+	animation-duration: 2s;
+}
+
+.card-wrapper {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+	background-color: #fffA;
+	padding: 20px;
+	border-radius: 20px;
+	max-width: 50%;
+	font-family: "Figtree", sans-serif;
+}
+
+.footer {
+	color: gray;
+	font-size: smaller;
+}
+
+.buttons {
+	display: flex;
+	gap: 10px;
+}
+
+.buttons a {
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+.primary {
+	color: #eee;
+	background: #333;
+	font-weight: bold;
+	flex: auto;
+	border: 2px solid transparent;
+}
+
+.secondary {
+	border: 2px solid #333;
+}
+
+@media screen and (max-width: 800px) {
+	.card {
+		max-width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #125286;
+	}
+
+	.waves-wrapper {
+		background: linear-gradient(180deg, #125286 0%, #00343b 100%);
+	}
+
+	.card {
+		background-color: #333A;
+		color: #eee;
+	}
+
+	.primary {
+		background-color: #eee;
+		color: #333;
+	}
+
+	.secondary {
+		border-color: #eee;
+	}
+}

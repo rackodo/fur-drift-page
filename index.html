@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furries Adrift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="waves-wrapper">
+		<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+		viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+			<style>
+				#wave1 {
+					fill: url(#gradientL1)
+				}
+
+				#wave2 {
+					fill: url(#gradientL2)
+				}
+
+				#wave3 {
+					fill: url(#gradientL3)
+				}
+
+				@media (prefers-color-scheme: dark) {
+					#wave1 {
+						fill: url(#gradientD1)
+					}
+	
+					#wave2 {
+						fill: url(#gradientD2)
+					}
+	
+					#wave3 {
+						fill: url(#gradientD3)
+					}
+				}
+			</style>
+			<defs>
+				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				<linearGradient id="gradientL1" gradientTransform="rotate(90)">
+					<stop offset="5%" stop-color="#fcb1f1" />
+					<stop offset="25%" stop-color="#FD32E0" />
+				</linearGradient>
+				<linearGradient id="gradientL2" gradientTransform="rotate(90)">
+					<stop offset="5%" stop-color="#f7d6ff" />
+					<stop offset="25%" stop-color="#E689FE" />
+				</linearGradient>
+				<linearGradient id="gradientL3" gradientTransform="rotate(90)">
+					<stop offset="5%" stop-color="#e48cff" />
+					<stop offset="25%" stop-color="#C80DFF" />
+				</linearGradient>
+				<linearGradient id="gradientD1" gradientTransform="rotate(90)">
+					<stop offset="5%" stop-color="#fcb1f1" />
+					<stop offset="25%" stop-color="#FD32E0" />
+				</linearGradient>
+				<linearGradient id="gradientD2" gradientTransform="rotate(90)">
+					<stop offset="5%" stop-color="#f7d6ff" />
+					<stop offset="25%" stop-color="#E689FE" />
+				</linearGradient>
+				<linearGradient id="gradientD3" gradientTransform="rotate(90)">
+					<stop offset="5%" stop-color="#e48cff" />
+					<stop offset="25%" stop-color="#C80DFF" />
+				</linearGradient>
+			</defs>
+			<g class="wavy">
+				<use xlink:href="#gentle-wave" x="48" y="0" id="wave1"/>
+				<use xlink:href="#gentle-wave" x="48" y="5" id="wave2"/>
+				<use xlink:href="#gentle-wave" x="48" y="10" id="wave3"/>
+			</g>
+		</svg>
+	</div>
+	<div class="card-wrapper">
+		<div class="card">
+			<div class="heading">
+				<h1>Furries Adrift</h1>
+			</div>
+			<hr>
+			<div class="content">
+				<p>Are you looking for your new favourite furry community? Well, look no further!</p>
+			</div>
+			<div class="buttons">
+				<a onclick="alert('You joined the server')" class="primary">Join Now!</a>
+				<a onclick="alert('You wanted to learn more.')" class="secondary">Learn More</a>
+			</div>
+			<hr>
+			<div class="footer">
+				Website designed by rackodo & dingledangledoff.
+			</div>
+		</div>
+	</div>
+</body>
+</html>
