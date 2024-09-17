@@ -62,7 +62,6 @@ body {
 
 /* Bash's Code */
 .waves-wrapper {
-	background: linear-gradient(180deg, #2196f3 0%, #00bcd4 100%);
 	overflow: hidden;
 	position: fixed;
 	display: flex;
@@ -72,6 +71,15 @@ body {
 	bottom: 0px;
 	height: 100dvh;
 	width: 100vw;
+	z-index: -8;
+}
+
+.back-gradient {
+	background: linear-gradient(180deg, #2196f3 0%, #00bcd4 100%);
+	overflow: hidden;
+	position: fixed;
+	width: 100dvw;
+	height: 100dvh;
 	z-index: -10;
 }
 
@@ -172,6 +180,21 @@ body {
 	padding-right: 3px;
 }
 
+#cursor {
+	position: fixed;
+	filter: blur(200px);
+	-webkit-filter: blur(200px);
+	z-index: -9;
+	display: block;
+	width: 300px;
+	height: 300px;
+	/* left: 50%; */
+	/* top: 50%; */
+	translate: -50% -50%;
+	border-radius: 100%;
+	background-color: white;
+}
+
 @media screen and (max-width: 800px) {
 	.card {
 		max-width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
@@ -183,7 +206,7 @@ body {
 		background-color: #125286;
 	}
 
-	.waves-wrapper {
+	.back-gradient {
 		background: linear-gradient(180deg, #125286 0%, #00343b 100%);
 	}
 
