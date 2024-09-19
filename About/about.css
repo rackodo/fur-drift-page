@@ -31,7 +31,7 @@
 	top: 20%;
 	left: 50%;
 	transform: translate(-50%, 0);
-	width: 75%;
+	width: 80%;
 	border-radius: 10px;
 	padding: 10px;
 	background-color: #fffA;
@@ -40,11 +40,21 @@
 	font-family: "Figtree", sans-serif;
   }
 
-  .content h1{
+  .content h1 {
 	text-align: center;
 	text-shadow: 0 0 15px #C80DFF;
 	line-height: 10%;
   }
+
+  .section {
+	display: flex;
+  }
+
+@media screen and (max-width: 800px) {
+	.section {
+		flex-direction: column;
+	}
+}
 
 @media (prefers-color-scheme: dark) {
 	.header h1{

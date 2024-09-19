@@ -108,3 +108,9 @@
         color: #eee
 	}
 }
+
+@media screen and (max-width: 800px) {
+	.card {
+		max-width: 80%;
+	}
+}
