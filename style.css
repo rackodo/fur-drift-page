@@ -89,97 +89,6 @@ body {
 	animation-duration: 2s;
 }
 
-.card-wrapper {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-}
-
-.card {
-	backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-	background-color: #fffA;
-	padding: 20px;
-	border-radius: 20px;
-	max-width: 50%;
-	font-family: "Figtree", sans-serif;
-}
-
-.footer {
-	color: gray;
-	font-size: smaller;
-}
-
-.buttons {
-    display: flex;
-    gap: 10px;
-}
-  
-.buttons a {
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    text-align: center;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;   
-}
-
-.heading {
-	display: flex;
-}
-
-.heading h1 {
-	flex: 100%;
-}
-
-.heading img {
-	display: inline-block;
-	aspect-ratio: 1/1;
-	width: 80px;
-	flex: auto;
-	height: 100%;
-	border-radius: 100%;
-}
-  
-.primary {
-    color: #eee;
-    background: #333;
-    font-weight: bold;
-    flex: auto;
-    border: 2px solid transparent;
-}
-  
-.secondary {
-    border: 2px solid #333;
-    color: #333;
-}
-  
-/*Added Hover effect (Doff)*/
-.primary:hover {
-    background-color: #2196f3;
-    box-shadow: 0 0 10px 5px #fd32df44;
-}
-  
-.secondary:hover {
-    border: 2px solid #2196f3;
-    color: #2196f3;
-    box-shadow: 0 0 10px 5px #fd32df44;
-}
-
-.extLink {
-	color: #2196f3;
-}
-
-.extLink::before {
-	display: inline-block;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	font: var(--fa-font-solid);
-	content:'\f08e';
-	padding-right: 3px;
-}
-
 #cursor {
 	position: fixed;
 	filter: blur(200px);
@@ -192,13 +101,6 @@ body {
 	border-radius: 100%;
 	background-color: white;
 }
-
-@media screen and (max-width: 800px) {
-	.card {
-		max-width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
-	}
-}
-
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #125286;
@@ -206,21 +108,6 @@ body {
 
 	.back-gradient {
 		background: linear-gradient(180deg, #125286 0%, #00343b 100%);
-	}
-
-	.card {
-		background-color: #333A;
-		color: #eee;
-	}
-
-	.primary {
-		background-color: #eee;
-		color: #333;
-	}
-
-	.secondary {
-		border-color: #eee;
-        color: #eee
 	}
 
 	/*Wave gradients dark theme*/
